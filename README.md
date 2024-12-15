@@ -57,6 +57,7 @@ Aby podłączyć aplikację do działającego backendu i serwera WebSocket, nale
 1. **Tworzenie Wydarzenia**: 
    - Widok ogólny i szczegółowy wydarzenia. 
    - Opcja rozpoczęcia wydarzenia, która prowadzi do interfejsu wyprawy.
+
 <table>
   <tr>
     <td align="center"><img src="media/wydarzenie.jpg" alt="Widok Wydarzenia (Ogólny)" width="175"/><br><b>Widok Wydarzenia (Ogólny)</b></td>
@@ -64,17 +65,26 @@ Aby podłączyć aplikację do działającego backendu i serwera WebSocket, nale
     <td align="center"><img src="media/wydarzenie_start.jpg" alt="Rozpoczęte wydarzenie (Odnośnik w postaci FAB)" width="175"/><br><b>Rozpoczęte Wydarzenie</b></td>
   </tr>
 </table>
+
 2. **Realizacja Wyprawy**:
    - Podczas wyprawy: możliwość dodawania multimediów i przypisywania ich do lokalizacji.
+
+<table>
+  <tr>
+    <td align="center"><img src="media/wyprawa.jpg" alt="Wyprawa w toku" width="175"/><br><b>Wyprawa w toku</b></td>
+  </tr>
+</table>
 
 3. **Relacja**:
    - Produkt końcowy wyprawy w formie interaktywnej mapy trasy z multimedialnymi pinezkami i galerią.
 
-![Widok Wydarzenia (Ogólny)](link_do_obrazka)
-![Widok Wydarzenia (Szczegółowy)](link_do_obrazka)
-![Rozpoczęte wydarzenie (Odnośnik w postaci FAB)](link_do_obrazka)
-![Interfejs Wyprawy](link_do_obrazka)
-![Podsumowanie Wyprawy](link_do_obrazka)
+<table>
+  <tr>
+    <td align="center"><img src="media/relacja.jpg" alt="Relacja" width="175"/><br><b>Relacja</b></td>
+  </tr>
+</table>
+
+
 
 ## Instrukcja Użytkownika
 Szczegółowe informacje na temat obsługi aplikacji mobilnej oraz dostępnych funkcjonalności znajdują się w [instrukcji użytkownika](link_do_instrukcji).
