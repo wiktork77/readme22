@@ -1,52 +1,72 @@
-# Projekt Social Tripper
-Głównym celem projektu było opracowanie nowoczesnego portalu społecznościowego, który integruje funkcje organizowania podróży oraz dzielenia się relacjami z wyjazdów. Portal ten łączy cechy aplikacji typu social media z narzędziami przeznaczonymi do planowania i realizacji podróży. Projekt obejmował stworzenie dwóch aplikacji – mobilnej i webowej – współpracujących z bazami danych, w których przechowywane są informacje o użytkownikach, wydarzeniach oraz materiałach multimedialnych.
-System został zaprojektowany z myślą o wspieraniu użytkowników w aktywnym udziale w podróżach oraz budowaniu społeczności wokół wspólnych pasji. System oferuje system rekomendacji, który na podstawie analizy preferencji użytkowników sugeruje interesujące wyjazdy oraz osoby o podobnych zainteresowaniach. Dzięki temu użytkownicy mogą w prosty sposób nawiązywać kontakty i planować wyjazdy zgodnie ze swoimi upodobaniami.
+## Cel Projektu
+Celem projektu było opracowanie zaawansowanego portalu społecznościowego, który integruje funkcje organizowania podróży z możliwością dzielenia się relacjami z wyjazdów. Portal łączy funkcjonalności aplikacji typu social media z narzędziami do planowania i realizacji podróży. Projekt obejmował stworzenie dwóch aplikacji:
+- **Aplikacja mobilna**
+- **Aplikacja webowa**
 
-# Social Tripper Mobile 
-Repozytorium zawiera kod aplikacji mobilnej projektu Social Tripper, która dostępna jest na androida.
-Aplikacja mobilna jest dodatkiem do portalu społecznościowego, który jest w pełni zrealizowany za pomocą strony internetowej, aplikacja mobilna zawiera podzbiór funkcjonalności strony internetowej jeśli chodzi o typowe funkcjonalności social media, mobilke wyróżnia to, że możemy za pomocą aplikacji rozpocząć wyprawę i wrzucać zdjęcia, filmiki, które są przypisywane do konkretnych lokalizacji ich wykonania na ścieżce, jak i taką wyprawę możemy zakończyć, czego produktem jest "Relacja" - jest to podsumowanie wyprawy w postaci udostępnionej przebytej ścieżki, multimedialnych pinezek oraz slidera multimediów.
-Inne funkcjonalności to przeglądanie postów, wypraw, aplikowanie do wypraw oraz przeglądanie mapy, no i login oraz rejestracja, które zrealizowane są za pomocą AWS Amplify.
+Obie aplikacje współpracują z bazami danych, które przechowują informacje o użytkownikach, wydarzeniach i materiałach multimedialnych. System wspiera użytkowników w organizowaniu wyjazdów oraz budowaniu społeczności wokół wspólnych pasji. Oferuje także system rekomendacji, który na podstawie preferencji użytkowników sugeruje interesujące wyjazdy oraz osoby o podobnych zainteresowaniach. 
 
-# Plik Apk aplikacji
-Ostateczna wersja aplikacji została zbudowana i udostępniona na publicznym repozytorium, tak, aby można było ją przetestować bez konieczności manualnej kompilacji, plik apk znajduje się pod linkiem: https://apkfab.com/socialtrippermobile/com.example.social_tripper_mobile/apk?h=4cdd19b24d161b30b1885665a9ade39317a36015470e0fa306bbbec5a185225c
+## Aplikacja Mobilna: Social Tripper
+### Opis Funkcjonalności
+Aplikacja mobilna, przeznaczona na system Android, stanowi rozszerzenie portalu społecznościowego, realizując następujące funkcje:
 
+1. **Unikalne Funkcjonalności Podróżnicze**:
+   - Rozpoczynanie wyprawy.
+   - Przesyłanie zdjęć i filmów przypisanych do lokalizacji na trasie.
+   - Zakończenie wyprawy i generowanie "Relacji", która zawiera przebyte trasy, multimedialne pinezki i galerię multimediów.
 
-# Instrukcja kompilacji
-Najlepiej projekt uruchomić w Android Studio (wersja Koala), następnie przejść przez następującą procedurę wykonania kodu
-## Kompilacja do wersji debug:
+2. **Standardowe Funkcjonalności Social Media**:
+   - Przeglądanie postów i wypraw.
+   - Aplikowanie do wydarzeń.
+   - Logowanie i rejestracja użytkowników z wykorzystaniem AWS Amplify.
+
+3. **Interfejs Mapy**:
+   - Możliwość przeglądania i planowania tras podróży.
+
+### Link do Pliku APK
+Gotowa wersja aplikacji jest dostępna do pobrania i testowania: [Social Tripper APK](https://apkfab.com/socialtrippermobile/com.example.social_tripper_mobile/apk?h=4cdd19b24d161b30b1885665a9ade39317a36015470e0fa306bbbec5a185225c)
+
+## Instrukcja Kompilacji
+Aby skompilować aplikację mobilną, należy użyć środowiska Android Studio (wersja Koala) i wykonać następujące kroki:
+
+### Kompilacja w Trybie Debug:
+```bash
 flutter clean
 flutter pub get
 flutter run
-## Kompilacja do wersji release:
+```
+
+### Kompilacja w Trybie Release:
+```bash
 flutter clean
 flutter pub get
 flutter run --release
+```
 
-## Komponenty zależne
-Do kompilacji potrzebne są następujące komponenty
-- skonfigurowana usługa AWS Amplify: https://docs.amplify.aws/gen1/flutter/start/project-setup/prerequisites/
-- uruchomiony backend, kod aplikacji backendowej znajduje się w następującym repozytorium: https://github.com/Lehito15/SocialTripper_Backend
-- uruchomiony serwer WebSocket, kod serwera WebSocket znajduje się w następującym repozytorium: https://github.com/betonowylukasz/SocialTripper_WebSocket
+### Wymagane Komponenty:
+- **AWS Amplify**: Szczegóły konfiguracji dostępne są [tutaj](https://docs.amplify.aws/gen1/flutter/start/project-setup/prerequisites/).
+- **Backend**: Kod dostępny w repozytorium [SocialTripper_Backend](https://github.com/Lehito15/SocialTripper_Backend).
+- **Serwer WebSocket**: Kod dostępny w repozytorium [SocialTripper_WebSocket](https://github.com/betonowylukasz/SocialTripper_WebSocket).
 
-## Odnośniki w kodzie
-Aby podpiąć aplikację do backendu, który działa pod pewnym adresem, należy zmodyfikować plik lib\Pages\config\data_retrieving_config.dart oraz ustawić atrybut sourceUrl klasy DataRetrievingConfig na odpowiedni adres, wszystkie serwisy wykonują zapytania korzystając z tego punktu odniesienia
-Aby podpiąć aplikację do serwera WebSocket, należy w pliku lib\Pages\trip_interface.dart zmienić atrybuty fileServerAddress oraz client, tak, aby odpowiadały nowemu adresowi
+### Modyfikacja Odnośników w Kodzie
+Aby podłączyć aplikację do działającego backendu i serwera WebSocket, należy:
+1. W pliku `lib/Pages/config/data_retrieving_config.dart` ustawić wartość `sourceUrl` na odpowiedni adres backendu.
+2. W pliku `lib/Pages/trip_interface.dart` zaktualizować atrybuty `fileServerAddress` oraz `client` do nowych adresów serwera WebSocket.
 
-# Demonstracja działania aplikacji
-Jak wcześniej wspomniano, aplikacja daje funkcjonalności które są związane z wyprawą, zanim wyprawa się rozpocznie, należy utworzyć wydarzenie, które jest nakładką na wyprawę w postaci planu.
-Widok wydarzenia (widok ogólny): [tu obrazek]
-Widok wydarzenia (widok szczegółowy): [tu obrazek]
-Rozpoczęcie wydarzenia (pojawia się odnośnik do interfejsu wyprawy): [tu obrazek]
-Wyprawa w toku: [tu obrazek]
-Zakończona wyprawa/wydarzenie i jego produkt - relacja: [tu obrazek]
+## Demonstracja Działania Aplikacji
+1. **Tworzenie Wydarzenia**: 
+   - Widok ogólny i szczegółowy wydarzenia. 
+   - Opcja rozpoczęcia wydarzenia, która prowadzi do interfejsu wyprawy.
 
+2. **Realizacja Wyprawy**:
+   - Podczas wyprawy: możliwość dodawania multimediów i przypisywania ich do lokalizacji.
 
-# Instrukcja użytkownika
-Wszystkie dostępne funkcjonalności, które oferuje aplikacja mobilna oraz jak się nimi posługiwać są opisane w instrukcji użytkownika: [tutaj link do instrukcji]
+3. **Relacja**:
+   - Produkt końcowy wyprawy w formie interaktywnej mapy trasy z multimedialnymi pinezkami i galerią.
 
+![Widok Wydarzenia (Ogólny)](link_do_obrazka)
+![Widok Wydarzenia (Szczegółowy)](link_do_obrazka)
+![Interfejs Wyprawy](link_do_obrazka)
+![Podsumowanie Wyprawy](link_do_obrazka)
 
-
-
-
-
-
+## Instrukcja Użytkownika
+Szczegółowe informacje na temat obsługi aplikacji mobilnej oraz dostępnych funkcjonalności znajdują się w [instrukcji użytkownika](link_do_instrukcji).
