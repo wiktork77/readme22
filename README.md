@@ -91,4 +91,4 @@ Aby podłączyć aplikację do działającego backendu i serwera WebSocket, nale
 
 
 ## Instrukcja Użytkowania
-Szczegółowe informacje na temat obsługi aplikacji mobilnej oraz dostępnych funkcjonalności znajdują się w [instrukcji użytkownika](link_do_instrukcji).
+Szczegółowe informacje na temat obsługi aplikacji mobilnej oraz dostępnych funkcjonalności znajdują się w [instrukcji użytkownika](SocialTripperMMobile-Manual.pdf).
