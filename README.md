@@ -32,6 +32,19 @@ Do kompilacji potrzebne są następujące komponenty
 Aby podpiąć aplikację do backendu, który działa pod pewnym adresem, należy zmodyfikować plik lib\Pages\config\data_retrieving_config.dart oraz ustawić atrybut sourceUrl klasy DataRetrievingConfig na odpowiedni adres, wszystkie serwisy wykonują zapytania korzystając z tego punktu odniesienia
 Aby podpiąć aplikację do serwera WebSocket, należy w pliku lib\Pages\trip_interface.dart zmienić atrybuty fileServerAddress oraz client, tak, aby odpowiadały nowemu adresowi
 
+# Demonstracja działania aplikacji
+Jak wcześniej wspomniano, aplikacja daje funkcjonalności które są związane z wyprawą, zanim wyprawa się rozpocznie, należy utworzyć wydarzenie, które jest nakładką na wyprawę w postaci planu.
+Widok wydarzenia (widok ogólny): [tu obrazek]
+Widok wydarzenia (widok szczegółowy): [tu obrazek]
+Rozpoczęcie wydarzenia (pojawia się odnośnik do interfejsu wyprawy): [tu obrazek]
+Wyprawa w toku: [tu obrazek]
+Zakończona wyprawa/wydarzenie i jego produkt - relacja: [tu obrazek]
+
+
+# Instrukcja użytkownika
+Wszystkie dostępne funkcjonalności, które oferuje aplikacja mobilna oraz jak się nimi posługiwać są opisane w instrukcji użytkownika: [tutaj link do instrukcji]
+
+
 
 
 
