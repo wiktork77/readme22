@@ -1,13 +1,14 @@
 ## Cel Projektu
 Celem projektu było opracowanie zaawansowanego portalu społecznościowego, który integruje funkcje organizowania podróży z możliwością dzielenia się relacjami z wyjazdów. Portal łączy funkcjonalności aplikacji typu social media z narzędziami do planowania i realizacji podróży. Projekt obejmował stworzenie dwóch aplikacji:
-- **Aplikacja mobilna**
-- **Aplikacja webowa**
+
+- **Aplikacja mobilna** https://github.com/Lehito15/social_tripper_frontend.git
+- [**Aplikacja webowa**](https://docs.amplify.aws/gen1/flutter/start/project-setup/prerequisites/)
 
 Obie aplikacje współpracują z bazami danych, które przechowują informacje o użytkownikach, wydarzeniach i materiałach multimedialnych. System wspiera użytkowników w organizowaniu wyjazdów oraz budowaniu społeczności wokół wspólnych pasji. Oferuje także system rekomendacji, który na podstawie preferencji użytkowników sugeruje interesujące wyjazdy oraz osoby o podobnych zainteresowaniach. 
 
 ## Aplikacja Mobilna: Social Tripper
 ### Opis Funkcjonalności
-Aplikacja mobilna, przeznaczona na system Android, stanowi rozszerzenie portalu społecznościowego, realizując następujące funkcje:
+Aplikacja mobilna, przeznaczona na system Android, stanowi dodatek do portalu społecznościowego, realizując następujące funkcje:
 
 1. **Unikalne Funkcjonalności Podróżnicze**:
    - Rozpoczynanie wyprawy.
@@ -26,7 +27,7 @@ Aplikacja mobilna, przeznaczona na system Android, stanowi rozszerzenie portalu 
 Gotowa wersja aplikacji jest dostępna do pobrania i testowania: [Social Tripper APK](https://apkfab.com/socialtrippermobile/com.example.social_tripper_mobile/apk?h=4cdd19b24d161b30b1885665a9ade39317a36015470e0fa306bbbec5a185225c)
 
 ## Instrukcja Kompilacji
-Aby skompilować aplikację mobilną, należy użyć środowiska Android Studio (wersja Koala) i wykonać następujące kroki:
+Aby skompilować aplikację mobilną, należy najlepiej użyć środowiska Android Studio (wersja Koala) i wykonać następujące kroki:
 
 ### Kompilacja w Trybie Debug:
 ```bash
