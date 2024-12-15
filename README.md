@@ -6,7 +6,7 @@
 Celem projektu było opracowanie zaawansowanego portalu społecznościowego, który integruje funkcje organizowania podróży z możliwością dzielenia się relacjami z wyjazdów. Portal łączy funkcjonalności aplikacji typu social media z narzędziami do planowania i realizacji podróży. Projekt obejmował stworzenie dwóch aplikacji:
 
 - **Aplikacja mobilna**
-- [**Aplikacja webowa**]([https://docs.amplify.aws/gen1/flutter/start/project-setup/prerequisites/](https://github.com/Lehito15/social_tripper_frontend))
+- [**Aplikacja webowa**](https://github.com/Lehito15/social_tripper_frontend)
 
 Obie aplikacje współpracują z bazami danych, które przechowują informacje o użytkownikach, wydarzeniach i materiałach multimedialnych. System wspiera użytkowników w organizowaniu wyjazdów oraz budowaniu społeczności wokół wspólnych pasji. Oferuje także system rekomendacji, który na podstawie preferencji użytkowników sugeruje interesujące wyjazdy oraz osoby o podobnych zainteresowaniach. 
 
