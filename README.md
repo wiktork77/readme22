@@ -1,6 +1,7 @@
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="media/header.svg" alt="Logo" />
-</div>
+<p align="center">
+   <img src="media/header.svg" alt="Logo" />
+</p>
+
 
 ## Cel Projektu
 Celem projektu było opracowanie zaawansowanego portalu społecznościowego, który integruje funkcje organizowania podróży z możliwością dzielenia się relacjami z wyjazdów. Portal łączy funkcjonalności aplikacji typu social media z narzędziami do planowania i realizacji podróży. Projekt obejmował stworzenie dwóch aplikacji:
