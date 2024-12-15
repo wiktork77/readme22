@@ -57,7 +57,13 @@ Aby podłączyć aplikację do działającego backendu i serwera WebSocket, nale
 1. **Tworzenie Wydarzenia**: 
    - Widok ogólny i szczegółowy wydarzenia. 
    - Opcja rozpoczęcia wydarzenia, która prowadzi do interfejsu wyprawy.
-
+<table>
+  <tr>
+    <td align="center"><img src="media/wydarzenie.jpg" alt="Widok Wydarzenia (Ogólny)" width="175"/><br><b>Widok Wydarzenia (Ogólny)</b></td>
+    <td align="center"><img src="media/wydarzenie_detail.jpg" alt="Widok Wydarzenia (Szczegółowy)" width="175"/><br><b>Widok Wydarzenia (Szczegółowy)</b></td>
+    <td align="center"><img src="media/wydarzenie_start.jpg" alt="Rozpoczęte wydarzenie (Odnośnik w postaci FAB)" width="175"/><br><b>Rozpoczęte Wydarzenie</b></td>
+  </tr>
+</table>
 2. **Realizacja Wyprawy**:
    - Podczas wyprawy: możliwość dodawania multimediów i przypisywania ich do lokalizacji.
 
